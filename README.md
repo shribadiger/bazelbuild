@@ -8,4 +8,5 @@ Bazel Tool is developed by google to automate the build process. Now Its an open
 
 ### Advantages from bazel in modern build process
 1) The build is competely depend on the input which is provided. Your input can decide which part of code need to rebuild and produce constant output.
+![Alt text](./img.jpg?raw=true "Title")
 2) 
