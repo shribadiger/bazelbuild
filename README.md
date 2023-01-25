@@ -10,3 +10,4 @@ Bazel Tool is developed by google to automate the build process. Now Its an open
 1) The build is competely depend on the input which is provided. Your input can decide which part of code need to rebuild and produce constant output.
 ![Alt text](./chainedbuild.png?raw=true "Chained Build")
 2) Easy to integrate with Docker and Kubernetes. If you have monorepo and multiple micro services, then It can build each container and host it for test environment. Further it can provide incremental build and perfrom deployment by using any orchastration tools like AWS and Kubernetes.
+![Alt text](./flow-bazel.png?raw=true "Chained Build")
