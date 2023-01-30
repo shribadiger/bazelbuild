@@ -28,3 +28,6 @@ Bazel Tool is developed by google to automate the build process. Now Its an open
      1. A package is a container of targets, which are defined in the package's BUILD file. Most targets are one of two principal kinds, files and rules.
      2. Files are further divided into two kinds. Source files are usually written by the efforts of people, and checked in to the repository. Generated files, sometimes called derived files or output files, are not checked in, but are generated from source files.
      ![Alt text](./rules.png?raw=true "Chained Build")
+     
+### Labels: ###
+
