@@ -31,3 +31,6 @@ Bazel Tool is developed by google to automate the build process. Now Its an open
      
 ### Labels: ###
 
+All targets belong to exactly one package. The name of a target is called its label. Every label uniquely identifies a target. A typical label in canonical form looks like:
+
+ `@myrepo//my/app/main:app_binary`
