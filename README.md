@@ -19,6 +19,7 @@ Bazel Tool is developed by google to automate the build process. Now Its an open
      1. A workspace is a directory tree on your filesystem that contains the source files for the software you want to build. Each workspace has a text file named WORKSPACE which may be empty, or may contain references to external dependencies required to build the outputs. 
      2.  Directories containing a file called WORKSPACE are considered the root of a workspace. Therefore, Bazel ignores any directory trees in a workspace rooted at a subdirectory containing a WORKSPACE file, as they form another workspace. 
      3. Bazel also supports WORKSPACE.bazel file as an alias of WORKSPACE file. If both files exist, WORKSPACE.bazel is used.
+![Alt text](./dir.png?raw=true "Chained Build")
 * **Package**:
      1.  The primary unit of code organization in a repository is the package. A package is a collection of related files and a specification of how they
      can be used to produce output artifacts.
