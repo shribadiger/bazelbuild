@@ -13,3 +13,13 @@ Bazel Tool is developed by google to automate the build process. Now Its an open
 ![Alt text](./chainbuild.png?raw=true "Chained Build")
 3) Bazel can handle the large projects. Bazel provides a uniform interface to building and testing across projects and programming languages, which is beneficial to CI/CD Process.
 4) Bazel used internal caching mechanism. It caches the builds and rebuild the content only which developer made the changes. It compares the privous build whcih is cached and newly built content and produce the final binary. This cache technique speedup the build process.
+
+### Bazel Build Structure:
+* **workspace**: 
+     1. A workspace is a directory tree on your filesystem that contains the source files for the software you want to build. Each workspace has a text file named WORKSPACE which may be empty, or may contain references to external dependencies required to build the outputs. 
+     2.  Directories containing a file called WORKSPACE are considered the root of a workspace. Therefore, Bazel ignores any directory trees in a workspace rooted at a subdirectory containing a WORKSPACE file, as they form another workspace. 
+     3. Bazel also supports WORKSPACE.bazel file as an alias of WORKSPACE file. If both files exist, WORKSPACE.bazel is used.
+* **Package**:
+     1.  The primary unit of code organization in a repository is the package. A package is a collection of related files and a specification of how they
+     can be used to produce output artifacts.
+     2. This folder will contain the *BUILD* and *BUILD.bazel* file. Its holds all other folders which required for build.
