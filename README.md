@@ -36,3 +36,8 @@ All targets belong to exactly one package. The name of a target is called its la
  `@myrepo//my/app/main:app_binary`
 
 ![Alt text](./names.png?raw=true "Chained Build")
+
+### Dependencies: ###
+A target A depends upon a target B if B is needed by A at build or execution time. The depends upon relation induces a Directed Acyclic Graph (DAG) over targets, and it is called a dependency graph.
+
+![Alt text](./dependency.png?raw=true "Chained Build")
